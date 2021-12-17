@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        body{
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+        #idA{
+            margin: 10px;
+            height: 200px;
+            width: 100%;
+            background-color: #99e699;
+            float: left;
+            text-align: center;
+            line-height:200px;
+        }
+        #idB{
+            margin: 10px;
+            height: 200px;
+            width: 100%;
+            background-color: rgb(183, 255, 255);
+            float: left;
+        }
+        .borderR{
+            border-width: 10px;
+            border-color: red;
+            border-style: solid;
+        }
+        .borderO{
+            border-width: 10px;
+            border-color: orange;
+            border-style: dashed;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="idA">你不怕，就水平垂直移動看看！</div>
+    <div id="idB">
+        <span style="font-size: x-large;">在這區域內，滑鼠上下移動看看！！！</span>
+        <span id="word2" style="font-size: x-large;"></span>
+        <ul>
+            <li>資訊管理學系</li>
+            <li>資訊工程學系</li>
+            <li>數位媒體學系</li>
+            <li>互動設計學系</li>
+        </ul>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $("#idA").mousemove(function(event){
+                var cooX = event.pageX - 10;
+                var cooY = event.pageY - 10;
+                $("#idA").text("滑鼠在元素內的座標:(" + cooX + ", " + cooY + ")");
+
+                if(cooX >= 400){
+                    $("#idA").css("background-color", "#99d6ff");
+                }
+                else if(cooX < 400){
+                    $("#idA").css("background-color", "#99e699");
+                }
+
+                if(cooY < 100){
+                    $("#idA").removeClass("borderO").addClass("borderR");
+                }
+                else if(cooY >= 100){
+                    $("#idA").addClass("borderO");
+                }
+            })
+
+            $("#idB").mousemove(function(event){
+                var coX = event.pageX;
+                var coY = event.pageY;
+                $("#word2").text("滑鼠目前絕對座標:(" + coX + ", " + coY + ")");
+
+                if(coY >= 300){
+                    $("ul").slideUp();
+                }
+                else{
+                    $("ul").slideDown();
+                }
+
+            })
+        })
+    </script>
+</body>
+
+</html>

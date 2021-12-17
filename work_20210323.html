@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>text() vs html()</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <style>
+        a[value = fontSize]{
+            font-size: 100px;
+        }
+
+        .background_Color{
+            background-color:blanchedalmond;
+        }
+        .addBorder{
+            border: 5px;
+        }
+
+        div{
+            height: 500px;
+            width: 500px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" name="changeClass" value="fontSize">改變字體大小
+    <input type="checkbox" name="changeClass" value="background_Color">改變背景顏色
+    <input type="checkbox" name="changeClass" value="addBorder">增加邊框
+    <div>check</div>
+
+
+    <script>
+        $(document).ready(function () {
+            $("input[nsmr='changeClass']").on('change', function () {
+                var one = $(this).val();
+                $("div").toggleClass(one)
+            });
+        });
+    </script>
+</body>
+
+</html>

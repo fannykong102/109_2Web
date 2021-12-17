@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>text() vs html()</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <input id="num1" type="number">
+    <input id="num2" type="number"><br>
+    <button>Click to Calculate</button>
+    <div></div>
+
+
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                var n1 = $("#num1").val();
+                var n2 = $("#num2").val();
+                var cal1 = Number(n1) + Number(n2);
+                var cal2 = Number(n1) - Number(n2);
+                var cal3 = n1 * n2;
+                var cal4 = n1 / n2;
+                var tx1 = $("<div>").text(n1 + "+" + n2 + "=" + cal1);
+                var tx2 = $("<div>").text(n1 + "-" + n2 + "=" + cal2);
+                var tx3 = $("<div>").text(n1 + "*" + n2 + "=" + cal3);
+                var tx4 = $("<div>").text(n1 + "/" + n2 + "=" + cal4);
+                $("div").append(tx1, tx2, tx3, tx4);
+            });
+        });
+    </script>
+</body>
+
+</html>

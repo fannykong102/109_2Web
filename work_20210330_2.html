@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>text() vs html()</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <style>
+        .now{
+            height: 500px;
+            width: 100%;
+            background-color:rgb(255, 255, 255);
+        }
+        .ch{
+            height: 200px;
+            width: 100%;
+            background-color:rgb(200, 231, 201);
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text">
+    <div class="now"></div>
+
+
+    <script>
+        $(document).ready(function () {
+            $("input").focus(function () {
+                $("div").toggleClass("ch");
+            });
+
+            $("input").keyup(function () {
+                var text1 = $("input").val();
+                $("div").text(text1);
+            })
+        });
+    </script>
+</body>
+
+</html>

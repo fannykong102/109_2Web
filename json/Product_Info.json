@@ -1,0 +1,177 @@
+[
+	{
+		"no": "1",
+		"name": "Xperia 5 II",
+		"value": "21000",
+		"company": "Sony",
+		"date": "3/3/21"
+	},
+	{
+		"no": "2",
+		"name": "Xperia 10 II",
+		"value": "8500",
+		"company": "Sony",
+		"date": "1/16/20"
+	},
+	{
+		"no": "3",
+		"name": "Xperia XZ3",
+		"value": "14100",
+		"company": "Sony",
+		"date": "4/6/20"
+	},
+	{
+		"no": "4",
+		"name": "Xperia 1",
+		"value": "17400",
+		"company": "Sony",
+		"date": "8/8/20"
+	},
+	{
+		"no": "5",
+		"name": "iPhone 12 mini 64GB",
+		"value": "20100",
+		"company": "Apple",
+		"date": "2/24/21"
+	},
+	{
+		"no": "6",
+		"name": "iPhone SE",
+		"value": "12900",
+		"company": "Apple",
+		"date": "9/16/20"
+	},
+	{
+		"no": "7",
+		"name": "iPhone 11 128GB",
+		"value": "19300",
+		"company": "Apple",
+		"date": "7/14/20"
+	},
+	{
+		"no": "8",
+		"name": "iPhone XR 64GB",
+		"value": "15700",
+		"company": "Apple",
+		"date": "12/30/19"
+	},
+	{
+		"no": "9",
+		"name": "iPhone XS Max 64G",
+		"value": "18200",
+		"company": "Apple",
+		"date": "10/25/19"
+	},
+	{
+		"no": "10",
+		"name": "iPhone 11 256GB",
+		"value": "23600",
+		"company": "Apple",
+		"date": "7/7/20"
+	},
+	{
+		"no": "11",
+		"name": "iPhone XS 512GB",
+		"value": "21200",
+		"company": "Apple",
+		"date": "4/5/21"
+	},
+	{
+		"no": "12",
+		"name": "Galaxy A52 5G 128GB",
+		"value": "10700",
+		"company": "Samsung",
+		"date": "11/29/20"
+	},
+	{
+		"no": "13",
+		"name": "Galaxy S21 5G 128GB",
+		"value": "18400",
+		"company": "Samsung",
+		"date": "3/13/21"
+	},
+	{
+		"no": "14",
+		"name": "Galaxy A42 5GB 128GB",
+		"value": "7550",
+		"company": "Samsung",
+		"date": "2/4/20"
+	},
+	{
+		"no": "15",
+		"name": "Galaxy M12",
+		"value": "4800",
+		"company": "Samsung",
+		"date": "6/18/19"
+	},
+	{
+		"no": "16",
+		"name": "Galaxy S20 FE 5G 128GB",
+		"value": "14400",
+		"company": "Samsung",
+		"date": "5/21/20"
+	},
+	{
+		"no": "17",
+		"name": "Galaxy A71",
+		"value": "10200",
+		"company": "Samsung",
+		"date": "9/27/19"
+	},
+	{
+		"no": "18",
+		"name": "U20 5G",
+		"value": "12300",
+		"company": "HTC",
+		"date": "5/3/21"
+	},
+	{
+		"no": "19",
+		"name": "Desire 21 Pro 5G",
+		"value": "9200",
+		"company": "HTC",
+		"date": "6/11/20"
+	},
+	{
+		"no": "20",
+		"name": "Desire 19+ 128GB",
+		"value": "5500",
+		"company": "HTC",
+		"date": "8/12/19"
+	},
+	{
+		"no": "21",
+		"name": "Zenfone 8",
+		"value": "16500",
+		"company": "ASUS",
+		"date": "1/17/21"
+	},
+	{
+		"no": "22",
+		"name": "ROG Phone 5",
+		"value": "21250",
+		"company": "ASUS",
+		"date": "5/15/21"
+	},
+	{
+		"no": "23",
+		"name": "Zenfone 7",
+		"value": "11700",
+		"company": "ASUS",
+		"date": "3/18/20"
+	},
+	{
+		"no": "24",
+		"name": "Zenfone Max Pro",
+		"value": "6600",
+		"company": "ASUS",
+		"date": "9/21/19"
+	},
+	{
+		"no": "25",
+		"name": "Renfone 8 Flip",
+		"value": "18500",
+		"company": "ASUS",
+		"date": "11/11/20"
+	}
+]

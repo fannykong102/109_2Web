@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Final Exam --- 4</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.1.2/dist/echarts.min.js"></script>
+    <style>
+        div {
+            display: inline-block;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="pieArea" style="width: 500px;height:400px;"></div>
+    <div id="barArea" style="width: 500px;height:400px;"></div>
+
+    <script>
+        $.getJSON("json/Product_Info.json", function (dataJ) {
+            var servicedata = [];
+            for (var i = 0; i < dataJ.length; i++) {
+                var obj = new Object();
+                obj.name = dataJ[i]["name"];
+                obj.value = dataJ[i]["value"];
+                servicedata[i] = obj;
+            }
+            var myChart = echarts.init(document.getElementById('pieArea'));
+            var option = {
+                title: {
+                    text: '手機的價格資訊'
+                },
+                series: [
+                    {
+                        name: '面积模式',
+                        type: 'pie',
+                        radius: [0, 150],
+                        center: ['50%', '50%'],
+                        roseType: 'area',
+                        data: servicedata
+                    }
+                ]
+            };
+            myChart.setOption(option);
+
+            var datax = [];
+            var datay = [];
+            for (var i = 0; i < dataJ.length; i++) {
+                nameD = dataJ[i]["name"];
+                count = 1;
+                if (dataJ[i]["name"] != nameD){
+                    nameD = dataJ[i]["name"]
+                }
+                else{
+
+                }
+                datax.push(nameD);
+            }
+
+        })
+
+    </script>
+
+</body>
+
+</html>

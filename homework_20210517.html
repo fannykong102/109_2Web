@@ -1,0 +1,93 @@
+<html>
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <button id="button1" class="btn btn-info">單選鈕─產生主餐類</button>
+    <button id="button2" class="btn btn-info">複選鈕─產生飲料類</button>
+    <button id="button3" class="btn btn-info">產生下拉式選單</button>
+    <hr>
+    <div id="result"></div>
+
+    <script>
+        $(document).ready(function () {
+            var foods = {
+
+                "雞腿飯": "80",
+                "排骨飯": "70",
+                "牛肉飯": "90",
+                "雞排飯": "75",
+                "魚排飯": "85"
+
+            };
+            var drinks = {
+
+                "紅茶": "15",
+                "綠茶": "20",
+                "奶茶": "30",
+                "麥茶": "25",
+                "冬瓜茶": "20"
+
+            };
+
+            var note = ["a", "b", "c", "d", "e"];
+
+            $("#button1").click(function(){
+                $("div").empty();
+
+                var radioName = "food";
+                var n = 0;
+
+                for(var key in foods){
+                    var myRadio = $("<input type='radio' id= '" + radioName + note[n] + "' name='" + radioName + "' value = '" + radioName + note[n] + "'><label for='food" + note[n] + "'>").text(key);
+                    $("#result").append(myRadio);
+                    n++;
+                }
+            })
+
+            $("#button2").click(function(){
+                $("div").empty();
+
+                var n = 0;
+                var checkboxName = "drink" + note[n];
+
+                for(var key in drinks){
+                    var myCheckbox = $("<input type='checkbox' id='" + checkboxName + "' name='" + checkboxName + "' value='" + checkboxName + "' ><label for='" + checkboxName + "'>").text(key);
+                    $("#result").append(myCheckbox);
+                    n++;
+                }
+            })
+
+            $("#button3").click(function(){
+                $("div").empty();
+
+                var mySelect = $("<select>");
+
+                var myGroup1 = $("<optgroup label='主餐類'>");
+                for(var key in foods){
+                    var myOption = $("<option>").text(key);
+                    myGroup1.append(myOption);
+                }
+                mySelect.append(myGroup1);
+
+                var myGroup2 = $("<optgroup label='飲料類'>");
+                for(var key in drinks){
+                    var myOption = $("<option>").text(key);
+                        myGroup2.append(myOption);
+                }
+                mySelect.append(myGroup2);
+
+                $("#result").append(mySelect);
+            })
+
+        })
+    </script>
+
+</body>
+
+</html>

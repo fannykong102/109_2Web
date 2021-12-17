@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+<html lang="en">   
+ <head>     
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+      div{
+          margin: 10px;
+      }
+
+  </style>
+ </head> 
+
+ <body>
+    <button id="button1" class="btn btn-info">產生具清單的表格</button>
+    <div id="div1"></div>
+
+    
+    <script>
+        $(document).ready(function(){
+            listA = ["資訊暨設計學院", "管理學院"];
+            list1 = ["資訊管理學系", "資訊工程學系", "數位媒體學系"];
+            list2 = ["國際企業學系", "會計資訊學系", "財務金融學系"];
+
+            $("#button1").click(function(){
+                $("div").empty();
+
+                var tableA =  $("<table border=1>");
+                var ul1 = $("<ul>");
+                var ol1 = $("<ol>");
+
+                for(var k=0; k<list1.length; k++){
+                    var li1 = $("<li>").text(list1[k]);
+                    ul1.append(li1);
+                    var li2 = $("<li>").text(list2[k]);
+                    ol1.append(li2);
+                }
+
+                for(var i=0; i<2; i++){
+                    var trA = $("<tr>");
+                    for(var j=0; j<listA.length; j++){
+                        if(i==0){
+                            var td1 = $("<td>").text(listA[j]);
+                        }
+                        else{
+                            var td1 = $("<td>");
+                            if(j==0){
+                                td1.append(ul1);
+                            }
+                            else{
+                                td1.append(ol1);
+                            }
+                        }
+                        trA.append(td1);
+                    }
+                    tableA.append(trA)
+                }
+                
+                $("#div1").append(tableA);
+
+            })
+        })
+    </script>
+ </body> 
+
+</html>

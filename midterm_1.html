@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+<html lang="en">   
+ <head>     
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+      div{
+          margin: 10px;
+      }
+      #divList{
+          border: 5px chartreuse solid;
+      }
+      #divCheckBox{
+          background-color: plum;
+      }
+      #divRadio{
+          background-color: skyblue;
+      }
+      .radioClass{
+          width: 30px;
+          height: 30px;
+      }
+  </style>
+ </head> 
+
+ <body>
+    <button id="buttonList" class="btn btn-info">List偶數選項的字體大小</button>
+    <button id="buttonCheckBox" class="btn btn-info">選取複選鈕(checkbox)奇數項</button>
+    <button id="buttonRadio" class="btn btn-info">設定單選鈕(radio)寬高和背景色</button>
+
+    <div id="divList">
+        <ul>
+            <li>資訊管理學系</li>
+            <li>資訊工程學系</li>
+            <li>數位媒體學系</li>
+            <li>互動設計學系</li>
+        </ul>
+    </div>
+    <div id="divCheckBox">
+        <input type="checkbox" id="department1" name="department1" value="d1">
+        <label for="department1">資管系</label>
+        <input type="checkbox" id="department2" name="department2" value="d2">
+        <label for="department2">資工系</label>
+        <input type="checkbox" id="department3" name="department3" value="d3">
+        <label for="department3">數媒系</label>
+        <input type="checkbox" id="department4" name="department4" value="d4">
+        <label for="department4">互動系</label>
+    </div>
+    <div id="divRadio">
+        <input type="radio" id="apple" name="phoneType" value="apple">
+        <label for="apple">Apple</label>
+        <input type="radio" id="samsung" name="phoneType" value="samsung">
+        <label for="samsung">Samsung</label>
+        <input type="radio" id="htc" name="phoneType" value="htc">
+        <label for="htc">HTC</label>
+        <input type="radio" id="oppo" name="phoneType" value="oppo">
+        <label for="oppo">oppo</label>
+    </div>
+    
+    <script>
+        $(document).ready(function(){
+            $("#buttonList").click(function(){
+                $("li:odd").css("fontSize", "36px");
+            })
+            $("#buttonCheckBox").click(function(){
+                $("#department1").prop( "checked", true );
+                $("#department3").prop( "checked", true );
+            })
+            $("#buttonRadio").click(function(){
+                $("#divRadio").css("backgroundColor", "#5cd65c");
+                $("input[name='phoneType']").addClass("radioClass");
+            })
+        })
+    </script>
+ </body> 
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <button id="button1">新增下拉式選單</button>
+    <div></div>
+    <script>
+        $(document).ready(function(){
+            sportList = ["籃球", "羽球", "排球", "桌球", "足球"];
+
+            var mySelect = $("<select>");
+
+            $("#button1").click(function(){
+                for(var i=0; i<sportList.length; i++){
+                    var sport = $("<option>").text((i+1) + " --- " + sportList[i]);
+                    mySelect.append(sport);
+
+                    $("div").append(mySelect);
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

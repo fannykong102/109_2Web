@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        div{
+            margin: 10px;
+        }
+        .classA{
+            background-color:burlywood;
+        }
+        .classB{
+            background-color:lightcoral;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="myButton">新增清單(有序 & 無序)</button>
+    <div id="resultA"></div>
+    <div id="resultB"></div>
+
+    <script>
+        $(document).ready(function(){ 
+
+            gradeList = ["大一", "大二", "大三", "大四"];
+            sportList = ["籃球", "羽球", "排球", "桌球", "足球"];
+
+            $("#myButton").click(function(){
+
+            $("div").empty();
+                
+            var myUl = $("<ul>");
+            var myOl = $("<ol>");
+
+            for(var i=0; i<gradeList.length; i++){
+                var myGrade = $("<li>").text(gradeList[i]);
+                myUl.append(myGrade);
+            }
+            $("#resultA").append(myUl).addClass("classA");
+
+            for(var i=0; i<sportList.length; i++){
+                var mySport = $("<li>").text(sportList[i]);
+                myOl.append(mySport);
+            }
+            $("#resultB").append(myOl).addClass("classB");
+                
+            })
+        })
+    </script>
+</body>
+
+</html>

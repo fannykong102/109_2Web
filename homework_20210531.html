@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="point"></div>
+
+    <script>
+        $.getJSON("json/garbageTruck.json", function(data){
+            var myTable = $("<table border='1'>");
+            var myHead = $("<thead>");
+            var firstRow = $("<tr>");
+
+            var headR = data[0];
+            for(var key in headR){
+                var myTh = $("<th>").text(key);
+                firstRow.append(myTh);
+            }
+            myHead.append(firstRow);
+            myTable.append(myHead);
+
+            var myBody = $("<tbody>");
+            for(var i=1; i<data.length; i++){
+                var myRow = $("<tr>");
+                for(var key in headR){
+                    var myTd = $("<td>").text(data[i][key]);
+                    myRow.append(myTd);
+                }
+                myBody.append(myRow);
+            }
+            myTable.append(myBody);
+            $("#point").append(myTable);
+        })
+    </script>
+</body>
+
+</html>

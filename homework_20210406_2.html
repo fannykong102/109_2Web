@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>text() vs html()</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <style>
+        td{
+            width: 10%;
+        }
+        p{
+            text-align: center;
+        }
+        table{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .BGpink{
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <p>請點選任意內容去進行清除</p>
+    <table border='1'>
+        <tr>
+            <td>資管系</td>
+            <td>資工系</td>
+            <td>互動系</td>
+            <td>數媒系</td>
+        </tr>
+        <tr>
+            <td>大傳系</td>
+            <td>翻譯系</td>
+            <td>應日系</td>
+            <td>社工系</td>
+        </tr>
+        <tr>
+            <td>會資系</td>
+            <td>土開系</td>
+            <td>航管系</td>
+            <td>國企系</td>
+        </tr>
+    </table>
+
+    <script>
+        $(document).ready(function () {
+            $("td").click(function () {
+                $(this).text("").addClass("BGpink");
+            });
+        });
+    </script>
+</body>
+
+</html>

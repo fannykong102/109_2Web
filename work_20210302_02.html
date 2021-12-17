@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <ul>
+        <li>ASUS</li>
+        <li>Apple</li>
+        <li>Lenovo</li>
+        <li>MSI</li>
+        <li>HTC</li>
+        <li>Acer</li>
+
+    </ul>
+    <input type="button" value="在第4項「之後」的元素" id="button1"/>
+    <input type="button" value="在第3項「之前」的元素" id="button2" />
+    <input type="button" value="偶數順位的元素" id="button3"/>
+    <input type="button" value="奇數順位的元素" id="button4"/>
+
+    <script>
+        $(document).ready(function () {
+            $("#button1").click(function () {
+                $("li:gt(3)").css("font-size", "60px");
+            })
+
+            $("#button2").click(function () {
+                $("li:lt(2)").css("border", "5px double blue");
+            })
+
+            $("#button3").click(function () {
+                $("li:even").css("background-color", "#feb1f6");
+            })
+
+            $("#button4").click(function () {
+                $("li:odd").css("background-color", '#98fb98');
+            })
+            })
+    </script>
+
+
+</body>
+
+</html>

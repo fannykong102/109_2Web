@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <ul>
+        <li>ASUS</li>
+        <li>Apple</li>
+        <li>Lenovo</li>
+        <li>MSI</li>
+        <li>HTC</li>
+        <li>Acer</li>
+
+    </ul>
+    <input type="button" value="過濾出有字母「A」的元素" id="button1"/>
+    <input type="button" value="倒數第3個的元素" id="button2" />
+    <input type="button" value="位置是3倍數的元素" id="button3"/>
+
+    <script>
+        $(document).ready(function () {
+            $("#button1").click(function () {
+                $("li:contains('A')").css("font-size", "60px");
+            })
+
+            $("#button2").click(function () {
+                $("li:nth-last-child(3)").css("background-color", "#feb1f6");
+            })
+
+            $("#button3").click(function () {
+                $("li:nth-child(3n)").css("background-color", "#98fb98");
+            })
+            })
+    </script>
+
+
+</body>
+
+</html>

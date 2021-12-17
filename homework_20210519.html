@@ -1,0 +1,91 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        input{
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="checkboxD">
+        <input type="checkbox" name="sport" value="BasketBall"><label>籃球</label>
+        <input type="checkbox" name="sport" value="BaseBall"><label>棒球</label>
+        <input type="checkbox" name="sport" value="Table-Tennis"><label>桌球</label>
+        <input type="checkbox" name="sport" value="Soccer"><label>足球</label>
+        <input type="checkbox" name="sport" value="Badminton"><label>羽球</label>
+    </div>
+
+    <div id="buttonD">
+        <button id="buttonT">勾選第三個</button>
+        <button id="buttonOdd">勾選奇數選項</button>
+        <button id="buttonChange">切換選項的勾選&沒勾選</button>
+        <button id="buttonAll">勾選所有選項</button>
+        <button id="buttonAllN">所有選項設成未勾選</button>
+        <button id="buttonShow">顯示被勾選項目的值</button>
+        <button id="buttonShowN">顯示沒有被勾選項目的值</button>
+
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#buttonT").click(function(){
+                $("input[type=checkbox]:nth-of-type(3)").prop("checked", true);
+            })
+
+            $("#buttonOdd").click(function(){
+                $("input[type=checkbox]:even").prop("checked", true);
+            })
+
+            $("#buttonChange").click(function(){
+                var Check = $("input[type=checkbox]:checked");
+                var Uncheck = $("input[type=checkbox]:not(:checked");
+                $(Check).prop("checked", false);
+                $(Uncheck).prop("checked", true);
+            })
+
+            $("#buttonAll").click(function(){
+                $("input[type=checkbox]").prop("checked", true);
+            })
+
+            $("#buttonAllN").click(function(){
+                $("input[type=checkbox]").prop("checked", false);
+            })
+
+            $("#buttonShow").click(function(){
+                var word = [];
+                $.each($("input[type=checkbox]:checked"), function(){
+                    word.push($(this).val());
+                })
+                
+                if(word.length == 0){
+                    alert("沒有被勾選的項目");
+                }
+                else{
+                    alert("被勾選項目的值:" + word.join(", "));
+                }
+            })
+
+            $("#buttonShowN").click(function(){
+                var word = [];
+                $.each($("input[type=checkbox]:not(:checked)"), function(){
+                    word.push($(this).val());
+                })
+                
+                if(word.length == 0){
+                    alert("所有項目皆被勾選");
+                }
+                else{
+                    alert("沒有被勾選項目的值:" + word.join(", "));
+                }
+            })
+
+        })
+    </script>
+</body>
+
+</html>

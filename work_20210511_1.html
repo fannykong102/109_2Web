@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <button id="button1">Click Here</button>
+    <div id="resultdemo"></div>
+    <script>
+        $(document).ready(function () {
+            var student = [
+                {
+                    "Sno": "A001",
+                    "Name": "Mary",
+                    "Sex": "F"
+                },
+                {
+                    "Sno": "A002",
+                    "Name": "John",
+                    "Sex": "M"
+                },
+                {
+                    "Sno": "A003",
+                    "Name": "Peggy",
+                    "Sex": "F"
+                }
+            ];
+
+
+
+            $("#button1").click(function () {
+                $("div").empty();
+
+                var tableA = $("<table border=1>");
+
+                var trKey = $("<tr>").css("background-color", "gray");
+                    
+                for (var key in student[0]) {
+                    var tdKey = $("<td>").text(key);
+                    trKey.append(tdKey);
+                }
+                tableA.append(trKey);
+                
+                for (var i = 0; i < student.length; i++) {
+                    var trA = $("<tr>");
+                    for (var key in student[i]) {
+                        var tdA = $("<td>").text(student[i][key]);
+                        trA.append(tdA);
+                    }
+                    tableA.append(trA);
+                }
+                $("#resultdemo").append(tableA);
+            })
+        })
+    </script>
+</body>
+
+</html>

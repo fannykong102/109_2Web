@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Display Data in Table and List -->
+    <title>Final Exam --- 3</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div style='text-align: center;'>
+        <input id='toTable' type='button' value='以表格顯示' class='btn btn-outline-success' />
+        <input id='fast' type='button' value='Limit超過70' class='btn btn-outline-warning' />
+        <input id='toList' type='button' value='以清單顯示' class='btn btn-outline-info' />
+    </div>
+    <div id='demo'></div>
+
+    <script>
+        $.getJSON("json/Camera.json", function (data) {
+            $("#toTable").click(function () {
+                $("#demo").empty();
+                var myTable = $("<table class='table table-striped'>");
+                var myHead = $("<thead>");
+                var firstRow = $("<tr>");
+
+                var headR = data[0];
+                for (var key in headR) {
+                    var myTh = $("<th>").text(key);
+                    firstRow.append(myTh);
+                }
+                myHead.append(firstRow);
+                myTable.append(myHead);
+
+                var myBody = $("<tbody>");
+                for (var i = 1; i < data.length; i++) {
+                    var myRow = $("<tr>");
+                    for (var key in headR) {
+                        var myTd = $("<td>").text(data[i][key]);
+                        myRow.append(myTd);
+                    }
+                    myBody.append(myRow);
+                }
+                myTable.append(myBody);
+                $("#demo").append(myTable);
+            })
+
+            $("#fast").click(function () {
+                $("#demo").empty();
+                var myTable = $("<table class='table table-striped'>");
+                var myHead = $("<thead class='thead thead-dark'>");
+                var firstRow = $("<tr>");
+
+                var headR = data[0];
+                for (var key in headR) {
+                    var myTh = $("<th>").text(key);
+                    firstRow.append(myTh);
+                }
+                myHead.append(firstRow);
+                myTable.append(myHead);
+
+                var myBody = $("<tbody>");
+                for (var i = 1; i < data.length; i++) {
+                    if (Number(data[i]["Limit"]) > 70) {
+                        var myRow = $("<tr>");
+                        for (var key in headR) {
+                            var myTd = $("<td>").text(data[i][key]);
+                            myRow.append(myTd);
+                        }
+                        myBody.append(myRow);
+                    }
+                }
+                myTable.append(myBody);
+                $("#demo").append(myTable);
+
+            })
+
+            $("#toList").click(function () {
+                $("#demo").empty();
+                for (var i = 0; i < data.length; i++) {
+                    var num = i+1;
+                    if (num % 3 == 0) {
+                        var myUl = $("<ul class='col-md-4 list-group-item-danger' style='float:left'>");
+                        for (var key in data[0]) {
+                            var myLi = $("<li>").text(data[i][key]);
+                            myUl.append(myLi);
+                        }
+                        $("#demo").append(myUl);
+                    }
+                    else if(num % 3 == 2){
+                        var myUl = $("<ul class='col-md-4 list-group-item-warning' style='float:left'>");
+                        for (var key in data[0]) {
+                            var myLi = $("<li>").text(data[i][key]);
+                            myUl.append(myLi);
+                        }
+                        $("#demo").append(myUl);
+                    }
+                    else{
+                        var myUl = $("<ul class='col-md-4 list-group-item-success' style='float:left'>");
+                        for (var key in data[0]) {
+                            var myLi = $("<li>").text(data[i][key]);
+                            myUl.append(myLi);
+                        }
+                        $("#demo").append(myUl);
+                    }
+                }
+
+            })
+        })
+
+    </script>
+
+</body>
+
+</html>

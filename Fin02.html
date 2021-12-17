@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Final Exam --- 2</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        table {
+            text-align: center;
+            width: 90%;
+            margin: 10px;
+        }
+
+        th,
+        td {
+            height: 40px;
+        }
+
+        input[type='checkbox'] {
+            width: 20px;
+            height: 20px;
+        }
+
+        #main {
+            text-align: center;
+            font-size: 24px;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div style='text-align: center;'>
+        <table id='myTable' border='1'>
+            <thead>
+                <th>選取</th>
+                <th>課程名稱</th>
+                <th>學分</th>
+                <th>選/必修</th>
+                <th>教師</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type='checkbox' name='classInfo' /></td>
+                    <td>資料庫系統 </td>
+                    <td>3</td>
+                    <td>必修</td>
+                    <td>摩西</td>
+                </tr>
+                <tr>
+                    <td><input type='checkbox' name='classInfo' /></td>
+                    <td>資料結構</td>
+                    <td>3</td>
+                    <td>必修</td>
+                    <td>提摩太</td>
+                </tr>
+                <tr>
+                    <td><input type='checkbox' name='classInfo' /></td>
+                    <td>物件導向程式設計</td>
+                    <td>3</td>
+                    <td>選修</td>
+                    <td>保羅</td>
+                </tr>
+                <tr>
+                    <td><input type='checkbox' name='classInfo' /></td>
+                    <td>企業資源規劃</td>
+                    <td>2</td>
+                    <td>選修</td>
+                    <td>雅各</td>
+                </tr>
+                <tr>
+                    <td><input type='checkbox' name='classInfo' /></td>
+                    <td>管理學</td>
+                    <td>3</td>
+                    <td>必修</td>
+                    <td>約瑟</td>
+                </tr>
+                <tr>
+                    <td><input type='checkbox' name='classInfo' /></td>
+                    <td>機率學</td>
+                    <td>2</td>
+                    <td>選修</td>
+                    <td>約翰</td>
+                </tr>
+            </tbody>
+        </table>
+        <input id='listCourse' type='button' value='列出課程' style='width: 20%;' />
+        <input id='calCredit' type='button' value='計算學分' style='width: 20%;' />
+    </div>
+    <div id='main'></div>
+    <script>
+        $(document).ready(function () {
+            $("input[type='checkbox']").change(function() {
+                if(this.checked){
+                    $(this).parent().parent().css("background-color", "gold");
+                }
+                else{
+                    $(this).parent().parent().css("background-color", "");
+                }
+            })
+            
+            $("#listCourse").click(function (){
+                $("#main").empty();
+
+                $("input[type='checkbox']:checked").each(function(i){
+                    var course = $(this).parent().next().text() + ",";
+                    $("#main").append(course);
+                })
+            })
+
+            $("#calCredit").click(function (){
+                $("#main").empty();
+                var c = 0;
+                var cal = "";
+
+                $("input[type='checkbox']:checked").each(function(i){
+                    cal += $(this).parent().next().next().text();
+                })
+
+                for(var i=0; i<cal.length; i++){
+                    c += Number(cal[i]);
+                }
+                $("#main").append("總學分數: " + c);
+            })
+        })
+        
+    </script>
+</body>
+
+</html>

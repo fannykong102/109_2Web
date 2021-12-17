@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>請輸入帳號 & 密碼(錯誤時，會有小動畫！)</h1>
+    <div>
+        <label>帳號：</label>
+        <input type="text" id="username" placeholder="請輸入帳號" style="position:relative"><br>
+        <label>密碼：</label>
+        <input type="password" id="passwordID" placeholder="請輸入密碼" style="position:relative"><br>
+        <button id="confirm">確定</button>
+
+    </div>
+    
+    <script>
+        $(document).ready(function () {
+            $("#confirm").on("click", function() {
+                var username1 = $("#username").val();
+                var password1 = $("#passwordID").val();
+                var box1 = "username";
+                var box2 = "passwordID";
+
+                if(username1 != "root"){
+                    moveAnimation(box1);
+                }
+                if(password1 != "1234"){
+                    moveAnimation(box2);
+                }
+            })
+
+            function moveAnimation(box){
+                $("#"+ box + "").animate({"left":"10px"}, 150).animate({"left":"-10px"}, 150).animate({"left":"10px"}, 150).animate({"left":"0"}, 150);
+            }
+        })
+    </script>
+</body>
+</html>

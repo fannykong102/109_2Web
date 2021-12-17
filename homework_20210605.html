@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        #result{
+            height: 250px;
+            width: 250px;
+            border: 3px solid red;
+        }
+        #myWord{
+            font-size: 200%;
+            color: green;
+        }
+        input[type='checkbox']{
+            height: 30px;
+            width: 30px;
+        }
+        tr{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="pointTable">
+        <caption>這是一個簡化版的選課系統</caption>
+        <tr>
+            <td>
+                <input type="checkbox" name="subject" value="s1"><label>管理學</label>
+                <input type="checkbox" name="subject" value="s2"><label>程式設計</label>
+                <input type="checkbox" name="subject" value="s3"><label>網頁製作</label>
+                <input type="checkbox" name="subject" value="s4"><label>統計學</label>
+                <input type="checkbox" name="subject" value="s5"><label>資料庫系統</label>
+                <input type="checkbox" name="subject" value="s6"><label>微積分</label>
+                <input type="checkbox" name="subject" value="s7"><label>資料結構</label>
+                <input type="checkbox" name="subject" value="s8"><label>電子商務</label>
+                <input type="checkbox" name="subject" value="s9"><label>經濟學</label>
+                <input type="checkbox" name="subject" value="s10"><label>動態網頁設計</label>
+            </td>
+        </tr>
+        <tr>
+            <td><button id="button1">選課囉</button></td>
+        </tr>
+        <tr>
+            <td><div id="result" style="display: inline-block;"></div></td>
+        </tr>
+    </table>
+    <br>
+    <div id="myWord"></div>
+
+    <script>
+        $(document).ready(function(){
+            $("#button1").click(function(){
+                $("#result").empty();
+                $("#myWord").empty();
+                var wordR ="你選的課有: ";
+
+                $("input[name='subject']:checked").each(function(i){
+                    var kk = $(this).next('label').text();
+                    wordR += kk + ",";
+                    var r = $("<p>").text(kk);
+                    $("#result").append(r);
+                })
+
+                $("#myWord").append(wordR);
+                
+            })
+        })
+    </script>
+</body>
+
+</html>

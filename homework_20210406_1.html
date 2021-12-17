@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .BGpink{
+            background-color: lightpink;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>請點擊清單中任意項目，取得它的文字內容，且以h1格式顯示在下方</h2>
+    <ul>
+        <li>ASUS</li>
+        <li>Apple</li>
+        <li>Lenovo</li>
+        <li>MSI</li>
+        <li>HTC</li>
+        <li>Acer</li>
+    </ul>
+    <h1></h1>
+
+    <script>
+        $(document).ready(function () {
+            $("li").click(function () {
+                var word = $(this).text();
+                $("h1").text(word).addClass("BGpink");
+            })
+            })
+    </script>
+
+
+</body>
+
+</html>

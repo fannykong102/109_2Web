@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Final Exam --- 1</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        ul{
+            width: 30%;
+            margin: 5px;
+            padding: 20px;
+            border: 3px dashed yellowgreen;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <input id='inNum' type='number' />
+    <input id='btn' type='button' value='確定' />
+    <div id='main'></div>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function () {
+                var num = $("#inNum").val();
+                var code = ["A", "B", "C"];
+
+                for(var i=0; i<code.length; i++){
+                    var listB = $("<ul>");
+                    for(var j=0; j<num; j++){
+                        var n = j+1;
+                        var kk = $("<li>").text(code[i] + "-" + i + n);
+                        listB.append(kk);
+                    }
+                    $("#main").append(listB);
+                }
+                
+            })
+        })
+
+    </script>
+</body>
+
+</html>

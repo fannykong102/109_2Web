@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html lang="en">   
+ <head>     
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+      div{
+          margin: 10px;
+      }
+
+  </style>
+ </head> 
+
+ <body>
+    <button id="button1" class="btn btn-info">產生三角形字串</button>
+    <button id="button2" class="btn btn-info">產生三角形數學式</button>
+    <input type="number" id="input1">
+
+    <div id="div1"></div>
+
+    
+    <script>
+        $(document).ready(function(){
+            $("#button1").click(function(){
+                $("div").empty();
+                var n = $("#input1").val();
+
+                var str1 = "";
+                for(var i=n; i>0; i--){
+                    for(var j=n; j>=i; j--){
+                        str1 += "Stud-" + j + i + ", ";
+                    }
+                    str1 += "<br>";
+                }
+                $("#div1").html(str1);
+            })
+            $("#button2").click(function(){
+                $("div").empty();
+                var n = $("#input1").val();
+
+                var str2 = "";
+                for(var i=1; i<=n; i++){
+                    for(var j=1; j<=i; j++){
+                        var sum = i + j;
+                        str2 += i + "+" + j + "=" + sum + ", ";
+                    }
+                    str2 += "<br>";
+                }
+                $("#div1").html(str2);
+            })
+        })
+    </script>
+ </body> 
+
+</html>

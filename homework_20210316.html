@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>text() vs html()</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <table border='1'>
+        <tr>
+            <td>資設院</td>
+            <td>人文學院</td>
+            <td>管理學院</td>
+        </tr>
+        <tr>
+            <td>
+                <ol>
+                    <li>資工系</li>
+                    <li>資管系</li>
+                    <li>互動系</li>
+                    <li>數媒系</li>
+                </ol>
+            </td>
+            <td>
+                <ul>
+                    <li>應日系</li>
+                    <li>大傳系</li>
+                    <li>應哲系</li>
+                    <li>社工系</li>
+                </ul>
+            </td>
+            <td>
+                <ol style="list-style-type:cjk-ideographic">
+                    <li>企管系</li>
+                    <li>國貿系</li>
+                    <li>財金系</li>
+                    <li>航管系</li>
+                </ol>
+            </td>
+        </tr>
+    </table>
+    
+    <button id="btn1">資管系的夫節點</button>
+    <button id="btn2">人文學院學系的html()</button>
+    <button id="btn3">管理學院學系的text()</button>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("li:contains('資管系')").parent().css("background-color", "#f7cfe2")
+            });
+
+            $("#btn2").click(function () {
+                var myHtml = $("ul:contains('應日系')").html();
+                alert(myHtml);
+            });
+
+            $("#btn3").click(function () {
+                var myTxt = $("ol:contains('企管系')").text();
+                alert(myTxt);
+            });
+        });
+    </script>
+</body>
+
+</html>

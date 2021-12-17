@@ -1,0 +1,69 @@
+_<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <select id="select1">
+        <option value="depA">StarPro</option>
+        <option value="depB">CosPro</option>
+        <option value="depC">RhythmLink</option>
+        <option value="depC">NewDimension</option>
+    </select>
+    <select id="select2" style="display: none"></select>
+
+
+    <script>
+        $(document).ready(function(){
+            var starPro = ["fine", "trickstar", "流星隊", "Alkaloid"];
+            var cosPro = ["Eden", "Crazy:B", "Valkyrie", "2wink"];
+            var rhythmLink = ["Undead", "紅月", "Ra*bits"];
+            var newDI = ["Knights", "Switch", "DoubleFace"];
+
+            $("#select1").on("change", function(){
+                var myOption = $("#select1 option:selected").val();
+
+                switch(myOption){
+                    case "depA":
+                        $("#select2").empty();
+                        $("#select2").show();
+                        for(var i=0; i<starPro.length; i++){
+                            var newOption = $("<option>").val(starPro[i]).html(starPro[i]);
+                            $("#select2").append(newOption);
+                        }
+                        break;
+                    case "depB":
+                        $("#select2").empty();
+                        $("#select2").show();
+                        for(var i=0; i<cosPro.length; i++){
+                            var newOption = $("<option>").val(cosPro[i]).html(cosPro[i]);
+                            $("#select2").append(newOption);
+                        }
+                        break;
+                    case "depC":
+                        $("#select2").empty();
+                        $("#select2").show();
+                        for(var i=0; i<rhythmLink.length; i++){
+                            var newOption = $("<option>").val(rhythmLink[i]).html(rhythmLink[i]);
+                            $("#select2").append(newOption);
+                        }
+                        break;
+                    case "depD":
+                        $("#select2").empty();
+                        $("#select2").show();
+                        for(var i=0; i<newDI.length; i++){
+                            var newOption = $("<option>").val(newDI[i]).html(newDI[i]);
+                            $("#select2").append(newOption);
+                        }
+                        break;
+                    default:
+                        $("#select2").empty().hide();
+                        break;
+                }
+            })
+
+        })
+    </script>
+</body>
+</html>

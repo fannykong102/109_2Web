@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .zero{
+            background-color:white;
+        }
+        .one{
+            background-color: hotpink;
+        }
+        .two{
+            background-color: aquamarine;
+        }
+    </style>
+
+</head>
+
+<body>
+    <ul>
+        <li class="zero">資訊暨設計學院</li>
+        <li class="zero">人文學院</li>
+        <li class="zero">管理學院</li>
+    </ul>
+
+    <input type="text" id="boxInput"/><br>
+    <input type="button" value="套用樣式" id="button1"/>
+    <input type="button" value="切換樣式" id="button2" />
+
+    <script>
+        $(document).ready(function () {
+            $("#button1").click(function () {
+                var tx = $("#boxInput").val();
+                var tp1 = "one";
+                var tp2 = "two";
+                $("li:contains("+ tx +")").addClass(tp1);
+                $("li:not(:contains("+ tx +"))").addClass(tp2);
+            })
+
+            $("#button2").click(function () {
+                var tx = $("#boxInput").val();
+                var tp = "one two";
+                $("li").toggleClass(tp);
+            })
+
+            })
+    </script>
+
+
+</body>
+
+</html>

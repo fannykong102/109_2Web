@@ -1,0 +1,906 @@
+[
+	{
+		"No": "1",
+		"Address": "桃園區成功路3段235號前",
+		"CameraDirection": "往桃園市區方向",
+		"Limit": "40",
+		"Latitude": "25.0072897",
+		"Longitude": "121.3247527"
+	},
+	{
+		"No": "2",
+		"Address": "桃園區春日路561號前",
+		"CameraDirection": "往桃園市區方向",
+		"Limit": "50",
+		"Latitude": "25.0049995",
+		"Longitude": "121.3124597"
+	},
+	{
+		"No": "3",
+		"Address": "中壢區中山東路2段371號前",
+		"CameraDirection": "往市區方向",
+		"Limit": "50",
+		"Latitude": "24.9487467",
+		"Longitude": "121.2436302"
+	},
+	{
+		"No": "4",
+		"Address": "中壢區中園路2段46巷口",
+		"CameraDirection": "南下車道",
+		"Limit": "50",
+		"Latitude": "24.9867215",
+		"Longitude": "121.2387343"
+	},
+	{
+		"No": "5",
+		"Address": "中壢區中園路421號前",
+		"CameraDirection": "往中壢方向",
+		"Limit": "50",
+		"Latitude": "25.0024763",
+		"Longitude": "121.2293464"
+	},
+	{
+		"No": "6",
+		"Address": "中壢區中正路四段353號前",
+		"CameraDirection": "往中壢方向",
+		"Limit": "50",
+		"Latitude": "24.9904469",
+		"Longitude": "121.174404"
+	},
+	{
+		"No": "7",
+		"Address": "中壢區中正路2段239巷口",
+		"CameraDirection": "往中壢方向",
+		"Limit": "50",
+		"Latitude": "24.977359",
+		"Longitude": "121.195226"
+	},
+	{
+		"No": "8",
+		"Address": "中壢區新生路三段192號前",
+		"CameraDirection": "往大園方向",
+		"Limit": "50",
+		"Latitude": "24.9913954",
+		"Longitude": "121.2219984"
+	},
+	{
+		"No": "9",
+		"Address": "中壢區民族路六段360號前",
+		"CameraDirection": "往新屋方向",
+		"Limit": "50",
+		"Latitude": "24.9626775",
+		"Longitude": "121.1586343"
+	},
+	{
+		"No": "10",
+		"Address": "中壢區新生路2段421號前",
+		"CameraDirection": "往中壢方向",
+		"Limit": "50",
+		"Latitude": "24.9852355",
+		"Longitude": "121.222175"
+	},
+	{
+		"No": "11",
+		"Address": "中壢區臺31線12.3K",
+		"CameraDirection": "往南",
+		"Limit": "70",
+		"Latitude": "24.9913722",
+		"Longitude": "121.1929972"
+	},
+	{
+		"No": "12",
+		"Address": "中壢區臺31線12.5K",
+		"CameraDirection": "往北",
+		"Limit": "70",
+		"Latitude": "24.9913722",
+		"Longitude": "121.1929972"
+	},
+	{
+		"No": "13",
+		"Address": "中壢區領航南路與新生路口",
+		"CameraDirection": "往北",
+		"Limit": "50",
+		"Latitude": "24.9721514",
+		"Longitude": "121.2053963"
+	},
+	{
+		"No": "14",
+		"Address": "中壢區中華路普忠路口",
+		"CameraDirection": "往中壢方向",
+		"Limit": "50",
+		"Latitude": "24.9659841",
+		"Longitude": "121.2413651"
+	},
+	{
+		"No": "15",
+		"Address": "中壢區高鐵北路與青心路口",
+		"CameraDirection": "往大園方向",
+		"Limit": "50",
+		"Latitude": "24.9721514",
+		"Longitude": "121.2053963"
+	},
+	{
+		"No": "16",
+		"Address": "中壢區中園路2段346號",
+		"CameraDirection": "往大園方向",
+		"Limit": "50",
+		"Latitude": "24.9965277",
+		"Longitude": "121.2319572"
+	},
+	{
+		"No": "17",
+		"Address": "中壢區普忠路770巷口",
+		"CameraDirection": "往市區方向",
+		"Limit": "50",
+		"Latitude": "24.9525227",
+		"Longitude": "121.2511524"
+	},
+	{
+		"No": "18",
+		"Address": "平鎮區環南路301巷平興國中前岔路口",
+		"CameraDirection": "南下車道",
+		"Limit": "50",
+		"Latitude": "24.9502343",
+		"Longitude": "121.2066417"
+	},
+	{
+		"No": "19",
+		"Address": "平鎮區路橋南與平德路前",
+		"CameraDirection": "北上車道",
+		"Limit": "50",
+		"Latitude": "24.9296022",
+		"Longitude": "121.2053963"
+	},
+	{
+		"No": "20",
+		"Address": "平鎮區中豐路山頂段531號",
+		"CameraDirection": "往龍潭方向",
+		"Limit": "50",
+		"Latitude": "24.893104",
+		"Longitude": "121.212054"
+	},
+	{
+		"No": "21",
+		"Address": "平鎮區中豐路與三興路岔路口",
+		"CameraDirection": "往中壢方向",
+		"Limit": "50",
+		"Latitude": "24.9550523",
+		"Longitude": "121.2187218"
+	},
+	{
+		"No": "22",
+		"Address": "平鎮區民族路雙連2段217號對面",
+		"CameraDirection": "往新屋方向",
+		"Limit": "50",
+		"Latitude": "24.958342",
+		"Longitude": "121.180317"
+	},
+	{
+		"No": "23",
+		"Address": "平鎮區福龍路1段550號",
+		"CameraDirection": "往龍潭方向",
+		"Limit": "50",
+		"Latitude": "24.8967873",
+		"Longitude": "121.2259958"
+	},
+	{
+		"No": "24",
+		"Address": "平鎮區延平路3段260巷口前",
+		"CameraDirection": "往楊梅方向",
+		"Limit": "50",
+		"Latitude": "24.9378598",
+		"Longitude": "121.2009484"
+	},
+	{
+		"No": "25",
+		"Address": "平鎮區中興路與南豐路口",
+		"CameraDirection": "往埔心方向",
+		"Limit": "50",
+		"Latitude": "24.898372",
+		"Longitude": "121.193664"
+	},
+	{
+		"No": "26",
+		"Address": "平鎮區金陵路與環南路口",
+		"CameraDirection": "往平鎮方向",
+		"Limit": "50",
+		"Latitude": "24.9407586",
+		"Longitude": "121.2229896"
+	},
+	{
+		"No": "27",
+		"Address": "平鎮區中豐路與延平路口",
+		"CameraDirection": "往平鎮方向",
+		"Limit": "50",
+		"Latitude": "24.950768",
+		"Longitude": "121.218257"
+	},
+	{
+		"No": "28",
+		"Address": "八德區新生路段近龍宮街36巷9弄口",
+		"CameraDirection": "往平鎮方向",
+		"Limit": "50",
+		"Latitude": "24.926731",
+		"Longitude": "121.259181"
+	},
+	{
+		"No": "29",
+		"Address": "八德區興豐路1216號前",
+		"CameraDirection": "往鶯歌方向",
+		"Limit": "50",
+		"Latitude": "24.938421",
+		"Longitude": "121.308546"
+	},
+	{
+		"No": "30",
+		"Address": "八德區興豐路1216號前",
+		"CameraDirection": "往八德方向",
+		"Limit": "50",
+		"Latitude": "24.938421",
+		"Longitude": "121.308546"
+	},
+	{
+		"No": "31",
+		"Address": "八德區介壽路二段陸軍218營站前",
+		"CameraDirection": "往大溪方向",
+		"Limit": "50",
+		"Latitude": "24.9409119",
+		"Longitude": "121.297497"
+	},
+	{
+		"No": "32",
+		"Address": "八德區介壽路二段551號前",
+		"CameraDirection": "往桃園方向",
+		"Limit": "50",
+		"Latitude": "24.9425853",
+		"Longitude": "121.2974796"
+	},
+	{
+		"No": "33",
+		"Address": "八德區興豐路榮民之家前",
+		"CameraDirection": "往中壢方向",
+		"Limit": "50",
+		"Latitude": "24.938643",
+		"Longitude": "121.3083079"
+	},
+	{
+		"No": "34",
+		"Address": "八德區中華路龍壽街口署立桃園醫院前",
+		"CameraDirection": "往桃園方向",
+		"Limit": "50",
+		"Latitude": "24.977488",
+		"Longitude": "121.269884"
+	},
+	{
+		"No": "35",
+		"Address": "八德區和平路439號前",
+		"CameraDirection": "往交流道方向",
+		"Limit": "50",
+		"Latitude": "24.9582614",
+		"Longitude": "121.3099818"
+	},
+	{
+		"No": "36",
+		"Address": "八德區和強路127號前",
+		"CameraDirection": "往桃園向",
+		"Limit": "50",
+		"Latitude": "24.9606343",
+		"Longitude": "121.3184315"
+	},
+	{
+		"No": "37",
+		"Address": "大溪區)石園路慈安六村前",
+		"CameraDirection": "往員樹林方向",
+		"Limit": "60",
+		"Latitude": "24.8697721",
+		"Longitude": "121.258876"
+	},
+	{
+		"No": "38",
+		"Address": "大溪區信義路永福派出所前",
+		"CameraDirection": "北上車道",
+		"Limit": "50",
+		"Latitude": "24.8942399",
+		"Longitude": "121.324083"
+	},
+	{
+		"No": "39",
+		"Address": "大溪區崎頂下坡路段",
+		"CameraDirection": "往大溪方向",
+		"Limit": "50",
+		"Latitude": "24.899925",
+		"Longitude": "121.282295"
+	},
+	{
+		"No": "40",
+		"Address": "大溪區瑞安路1段(臺4線29K+900)崁津橋前",
+		"CameraDirection": "往崎頂方向",
+		"Limit": "60",
+		"Latitude": "24.8749746",
+		"Longitude": "121.2784167"
+	},
+	{
+		"No": "41",
+		"Address": "大溪區瑞安路1段(臺4線29K+650)崁津橋前",
+		"CameraDirection": "往石門水庫方向",
+		"Limit": "60",
+		"Latitude": "24.8749746",
+		"Longitude": "121.2784167"
+	},
+	{
+		"No": "42",
+		"Address": "大溪區介壽路560巷口",
+		"CameraDirection": "往桃園方向",
+		"Limit": "50",
+		"Latitude": "24.912318",
+		"Longitude": "121.2892037"
+	},
+	{
+		"No": "43",
+		"Address": "大溪區大鶯路1597號",
+		"CameraDirection": "往大溪方向",
+		"Limit": "40",
+		"Latitude": "24.9327561",
+		"Longitude": "121.3198809"
+	},
+	{
+		"No": "44",
+		"Address": "大溪區康莊路5段6號",
+		"CameraDirection": "往龍潭方向",
+		"Limit": "60",
+		"Latitude": "24.8269628",
+		"Longitude": "121.2662367"
+	},
+	{
+		"No": "45",
+		"Address": "大溪區員林路1段142巷口",
+		"CameraDirection": "往龍潭方向",
+		"Limit": "50",
+		"Latitude": "24.8993832",
+		"Longitude": "121.2811115"
+	},
+	{
+		"No": "46",
+		"Address": "大溪區埔頂路2段256號",
+		"CameraDirection": "往八德方向",
+		"Limit": "50",
+		"Latitude": "24.9131809",
+		"Longitude": "121.2809795"
+	},
+	{
+		"No": "47",
+		"Address": "大溪區永昌路臺66線路口",
+		"CameraDirection": "往中壢方向",
+		"Limit": "50",
+		"Latitude": "24.8979704",
+		"Longitude": "121.262498"
+	},
+	{
+		"No": "48",
+		"Address": "大溪區復興路二段20號前",
+		"CameraDirection": "往復興方向",
+		"Limit": "40",
+		"Latitude": "24.880772",
+		"Longitude": "121.2888997"
+	},
+	{
+		"No": "49",
+		"Address": "大溪區仁和路2段517巷口",
+		"CameraDirection": "往大溪方向",
+		"Limit": "50",
+		"Latitude": "24.9119531",
+		"Longitude": "121.2595411"
+	},
+	{
+		"No": "50",
+		"Address": "大溪區康莊路三段632號對面（台4線34K+200處）",
+		"CameraDirection": "往大溪方向",
+		"Limit": "60",
+		"Latitude": "24.846693",
+		"Longitude": "121.273075"
+	},
+	{
+		"No": "51",
+		"Address": "龜山區文化一路與復興二路口",
+		"CameraDirection": "往龜山方向",
+		"Limit": "50",
+		"Latitude": "25.057079",
+		"Longitude": "121.374062"
+	},
+	{
+		"No": "52",
+		"Address": "龜山區復興三路500號對面",
+		"CameraDirection": "往大埔方向",
+		"Limit": "50",
+		"Latitude": "25.0430289",
+		"Longitude": "121.369965"
+	},
+	{
+		"No": "53",
+		"Address": "龜山區萬壽路一段962號前-往北方向",
+		"CameraDirection": "北上車道",
+		"Limit": "50",
+		"Latitude": "25.0120338",
+		"Longitude": "121.3852388"
+	},
+	{
+		"No": "54",
+		"Address": "龜山區萬壽路一段1247巷前",
+		"CameraDirection": "南下車道",
+		"Limit": "50",
+		"Latitude": "25.0119967",
+		"Longitude": "121.3868147"
+	},
+	{
+		"No": "55",
+		"Address": "龜山區東萬壽路與龍校街121巷6弄口",
+		"CameraDirection": "南下車道",
+		"Limit": "50",
+		"Latitude": "25.0094757",
+		"Longitude": "121.376376"
+	},
+	{
+		"No": "56",
+		"Address": "龜山區東萬壽路622號前",
+		"CameraDirection": "北上車道",
+		"Limit": "50",
+		"Latitude": "25.0089425",
+		"Longitude": "121.3750697"
+	},
+	{
+		"No": "57",
+		"Address": "龜山區振興路829巷口旁",
+		"CameraDirection": "往桃園方向",
+		"Limit": "60",
+		"Latitude": "25.0216307",
+		"Longitude": "121.362755"
+	},
+	{
+		"No": "58",
+		"Address": "龜山區忠義路與舊105線岔路口",
+		"CameraDirection": "往林口方向",
+		"Limit": "60",
+		"Latitude": "25.0207933",
+		"Longitude": "121.3500753"
+	},
+	{
+		"No": "59",
+		"Address": "龜山區忠義路一段1196-15號前",
+		"CameraDirection": "往林口方向",
+		"Limit": "60",
+		"Latitude": "25.0356655",
+		"Longitude": "121.3554304"
+	},
+	{
+		"No": "60",
+		"Address": "龜山區忠義路一段18K+660前",
+		"CameraDirection": "往桃園方向",
+		"Limit": "60",
+		"Latitude": "25.0356655",
+		"Longitude": "121.3554304"
+	},
+	{
+		"No": "61",
+		"Address": "龜山區樂善村青山路2K",
+		"CameraDirection": "往新莊方向",
+		"Limit": "50",
+		"Latitude": "25.0358276",
+		"Longitude": "121.3913376"
+	},
+	{
+		"No": "62",
+		"Address": "龜山區振興路1169號前",
+		"CameraDirection": "往龜山方向",
+		"Limit": "60",
+		"Latitude": "25.0296641",
+		"Longitude": "121.3749706"
+	},
+	{
+		"No": "63",
+		"Address": "龜山區華亞三路近華亞二路前",
+		"CameraDirection": "往大埔方向",
+		"Limit": "50",
+		"Latitude": "25.0438447",
+		"Longitude": "121.3770658"
+	},
+	{
+		"No": "64",
+		"Address": "龜山區華亞三路近文化二路口",
+		"CameraDirection": "往長庚方向",
+		"Limit": "50",
+		"Latitude": "25.0438447",
+		"Longitude": "121.3770658"
+	},
+	{
+		"No": "65",
+		"Address": "龍潭區中豐路高平段281號前",
+		"CameraDirection": "南下車道",
+		"Limit": "60",
+		"Latitude": "24.8358128",
+		"Longitude": "121.2069125"
+	},
+	{
+		"No": "66",
+		"Address": "龍潭區福源路256號對面",
+		"CameraDirection": "往龍潭市區方向",
+		"Limit": "40",
+		"Latitude": "24.8259766",
+		"Longitude": "121.185085"
+	},
+	{
+		"No": "67",
+		"Address": "龍潭區中正路三林段330號前",
+		"CameraDirection": "往龍潭市區方向",
+		"Limit": "50",
+		"Latitude": "24.8497165",
+		"Longitude": "121.229263"
+	},
+	{
+		"No": "68",
+		"Address": "龍潭區龍源路大平段290號前",
+		"CameraDirection": "往大溪方向",
+		"Limit": "60",
+		"Latitude": "24.8260249",
+		"Longitude": "121.2386578"
+	},
+	{
+		"No": "69",
+		"Address": "龍潭區中豐路上林段(臺3線51K+700)",
+		"CameraDirection": "北向",
+		"Limit": "50",
+		"Latitude": "24.852064",
+		"Longitude": "121.2046032"
+	},
+	{
+		"No": "70",
+		"Address": "龍潭區中正路三坑下坡路段(臺3乙線5K+120)",
+		"CameraDirection": "往石門水庫方向",
+		"Limit": "50",
+		"Latitude": "24.8374421",
+		"Longitude": "121.2460684"
+	},
+	{
+		"No": "71",
+		"Address": "龍潭區中興路九龍段3巷",
+		"CameraDirection": "往大溪方向",
+		"Limit": "50",
+		"Latitude": "24.8795703",
+		"Longitude": "121.2490632"
+	},
+	{
+		"No": "72",
+		"Address": "龍潭區中豐路上林段513號前",
+		"CameraDirection": "北上車道",
+		"Limit": "50",
+		"Latitude": "24.8564647",
+		"Longitude": "121.2024595"
+	},
+	{
+		"No": "73",
+		"Address": "龍潭區上坪1-2號前",
+		"CameraDirection": "往大溪方向",
+		"Limit": "60",
+		"Latitude": "24.8253925",
+		"Longitude": "121.2474495"
+	},
+	{
+		"No": "74",
+		"Address": "龍潭區聖亭路236號春源鋼鐵旁",
+		"CameraDirection": "往埔心方向",
+		"Limit": "50",
+		"Latitude": "24.8704779",
+		"Longitude": "121.204508"
+	},
+	{
+		"No": "75",
+		"Address": "蘆竹區仁愛路三段高鐵橋前",
+		"CameraDirection": "往蘆竹方向",
+		"Limit": "40",
+		"Latitude": "25.0554407",
+		"Longitude": "121.310085"
+	},
+	{
+		"No": "76",
+		"Address": "蘆竹區富國路130號前",
+		"CameraDirection": "往蘆竹方向",
+		"Limit": "40",
+		"Latitude": "25.045538",
+		"Longitude": "121.2662347"
+	},
+	{
+		"No": "77",
+		"Address": "蘆竹區大竹路109號前",
+		"CameraDirection": "往桃園方向",
+		"Limit": "50",
+		"Latitude": "25.0145407",
+		"Longitude": "121.2712"
+	},
+	{
+		"No": "78",
+		"Address": "蘆竹區文中路1段265巷前",
+		"CameraDirection": "往桃園方向",
+		"Limit": "50",
+		"Latitude": "24.9892566",
+		"Longitude": "121.2622482"
+	},
+	{
+		"No": "79",
+		"Address": "蘆竹區中正北路茄苳橋前",
+		"CameraDirection": "往桃園方向",
+		"Limit": "60",
+		"Latitude": "25.043211",
+		"Longitude": "121.278317"
+	},
+	{
+		"No": "80",
+		"Address": "蘆竹區中正北路茄苳橋前",
+		"CameraDirection": "往竹圍方向",
+		"Limit": "60",
+		"Latitude": "25.043211",
+		"Longitude": "121.278317"
+	},
+	{
+		"No": "81",
+		"Address": "蘆竹區富國路2段360號",
+		"CameraDirection": "往桃園方向",
+		"Limit": "50",
+		"Latitude": "25.0398373",
+		"Longitude": "121.2684477"
+	},
+	{
+		"No": "82",
+		"Address": "蘆竹區南青路3K＋150",
+		"CameraDirection": "往南方向",
+		"Limit": "60",
+		"Latitude": "25.0473951",
+		"Longitude": "121.2515192"
+	},
+	{
+		"No": "83",
+		"Address": "蘆竹區山林路二段655號前",
+		"CameraDirection": "往山腳方向",
+		"Limit": "50",
+		"Latitude": "25.081982",
+		"Longitude": "121.308091"
+	},
+	{
+		"No": "84",
+		"Address": "大園區國際路二段784號前",
+		"CameraDirection": "北上車道",
+		"Limit": "70",
+		"Latitude": "25.1073861",
+		"Longitude": "121.2440951"
+	},
+	{
+		"No": "85",
+		"Address": "大園區大觀路與桃31號道路岔路口",
+		"CameraDirection": "南下車道",
+		"Limit": "50",
+		"Latitude": "25.0612555",
+		"Longitude": "121.1737904"
+	},
+	{
+		"No": "86",
+		"Address": "大園區三民路與坑?路口",
+		"CameraDirection": "往竹圍方向",
+		"Limit": "50",
+		"Latitude": "25.0789771",
+		"Longitude": "121.2589604"
+	},
+	{
+		"No": "87",
+		"Address": "大園區中正東路一段373號對面",
+		"CameraDirection": "往桃園方向",
+		"Limit": "50",
+		"Latitude": "25.045203",
+		"Longitude": "121.223644"
+	},
+	{
+		"No": "88",
+		"Address": "大園區中正東路1段373號",
+		"CameraDirection": "往大園方向",
+		"Limit": "50",
+		"Latitude": "25.045203",
+		"Longitude": "121.223644"
+	},
+	{
+		"No": "89",
+		"Address": "大園區大海村1鄰7號",
+		"CameraDirection": "往大園方向",
+		"Limit": "50",
+		"Latitude": "25.055985",
+		"Longitude": "121.227702"
+	},
+	{
+		"No": "90",
+		"Address": "大園區三民路2段825號",
+		"CameraDirection": "往桃園方向",
+		"Limit": "50",
+		"Latitude": "25.070161",
+		"Longitude": "121.261425"
+	},
+	{
+		"No": "91",
+		"Address": "大園區臺61線45.6K",
+		"CameraDirection": "往南",
+		"Limit": "90",
+		"Latitude": "25.0955046",
+		"Longitude": "121.2004816"
+	},
+	{
+		"No": "92",
+		"Address": "大園區臺61線35.6K",
+		"CameraDirection": "往北",
+		"Limit": "90",
+		"Latitude": "25.0955046",
+		"Longitude": "121.2004816"
+	},
+	{
+		"No": "93",
+		"Address": "觀音區臺66線與桃84線路口",
+		"CameraDirection": "往大溪方向",
+		"Limit": "80",
+		"Latitude": "24.9929678",
+		"Longitude": "121.1116561"
+	},
+	{
+		"No": "94",
+		"Address": "觀音區臺66線與桃84線岔路口(東向西)",
+		"CameraDirection": "往新屋方向",
+		"Limit": "80",
+		"Latitude": "24.9242108",
+		"Longitude": "121.1366715"
+	},
+	{
+		"No": "95",
+		"Address": "觀音區臺66線（2K）與桃89線岔路口    （東向西）",
+		"CameraDirection": "往高鐵方向",
+		"Limit": "80",
+		"Latitude": "25.0199801",
+		"Longitude": "121.0705474"
+	},
+	{
+		"No": "96",
+		"Address": "觀音區臺66線（1.98K）與桃89線岔路口（西向東）",
+		"CameraDirection": "往大溪方向",
+		"Limit": "80",
+		"Latitude": "25.0199801",
+		"Longitude": "121.0705474"
+	},
+	{
+		"No": "97",
+		"Address": "觀音區臺66線（2.5K）與桃94線岔路口 （東向西）",
+		"CameraDirection": "往高鐵方向",
+		"Limit": "80",
+		"Latitude": "25.018027",
+		"Longitude": "121.0745944"
+	},
+	{
+		"No": "98",
+		"Address": "觀音區臺66線（2.48K）與桃94線岔路口（西向東）",
+		"CameraDirection": "往大溪方向",
+		"Limit": "80",
+		"Latitude": "25.018027",
+		"Longitude": "121.0745944"
+	},
+	{
+		"No": "99",
+		"Address": "觀音區臺66線（1.080K）與臺15線岔路口（東向西）",
+		"CameraDirection": "往台61方向",
+		"Limit": "80",
+		"Latitude": "25.0252432",
+		"Longitude": "121.062221"
+	},
+	{
+		"No": "100",
+		"Address": "觀音區大觀路二段與六合路口",
+		"CameraDirection": "北上車道",
+		"Limit": "50",
+		"Latitude": "25.0438264",
+		"Longitude": "121.1383399"
+	},
+	{
+		"No": "101",
+		"Address": "觀音區大觀路與文化路(桃115縣道)岔路口",
+		"CameraDirection": "南下車道",
+		"Limit": "70",
+		"Latitude": "25.025287",
+		"Longitude": "121.086891"
+	},
+	{
+		"No": "102",
+		"Address": "觀音區濱海路保生段277號前",
+		"CameraDirection": "南下車道",
+		"Limit": "70",
+		"Latitude": "25.0169679",
+		"Longitude": "121.052455"
+	},
+	{
+		"No": "103",
+		"Address": "觀音區成功路與忠孝路口",
+		"CameraDirection": "往觀音工業區方向",
+		"Limit": "50",
+		"Latitude": "25.0551195",
+		"Longitude": "121.1336655"
+	},
+	{
+		"No": "104",
+		"Address": "新屋區濱海路（台15線）與中山西路口",
+		"CameraDirection": "北上車道",
+		"Limit": "70",
+		"Latitude": "24.988993",
+		"Longitude": "121.030853"
+	},
+	{
+		"No": "105",
+		"Address": "新屋區濱海路（台15線）與中山西路口",
+		"CameraDirection": "南下車道",
+		"Limit": "70",
+		"Latitude": "24.988993",
+		"Longitude": "121.030853"
+	},
+	{
+		"No": "106",
+		"Address": "新屋區中山西路三段62號前",
+		"CameraDirection": "往永安漁港方向",
+		"Limit": "50",
+		"Latitude": "24.9875375",
+		"Longitude": "121.0448349"
+	},
+	{
+		"No": "107",
+		"Address": "新屋區中山東路一段458號前",
+		"CameraDirection": "往中壢方向",
+		"Limit": "50",
+		"Latitude": "24.9722646",
+		"Longitude": "121.1251651"
+	},
+	{
+		"No": "108",
+		"Address": "新屋區臺66線（8.46K）與桃82線岔路口（東向西）",
+		"CameraDirection": "往高鐵方向",
+		"Limit": "80",
+		"Latitude": "24.9877717",
+		"Longitude": "121.1229627"
+	},
+	{
+		"No": "109",
+		"Address": "新屋區臺66線（8.44K）與桃82線岔路口（西向東）",
+		"CameraDirection": "往大溪方向",
+		"Limit": "80",
+		"Latitude": "24.9877717",
+		"Longitude": "121.1229627"
+	},
+	{
+		"No": "110",
+		"Address": "新屋區台15線59K處",
+		"CameraDirection": "往北方向",
+		"Limit": "70",
+		"Latitude": "24.955013",
+		"Longitude": "121.011966"
+	},
+	{
+		"No": "111",
+		"Address": "楊梅區中山南路崩坡段929號前",
+		"CameraDirection": "南下車道",
+		"Limit": "70",
+		"Latitude": "24.9014889",
+		"Longitude": "121.122724"
+	},
+	{
+		"No": "112",
+		"Address": "楊梅區民富路二段208號前",
+		"CameraDirection": "往楊梅方向",
+		"Limit": "50",
+		"Latitude": "24.9242635",
+		"Longitude": "121.1124506"
+	},
+	{
+		"No": "113",
+		"Address": "楊梅區梅獅路與文化街岔路口",
+		"CameraDirection": "往楊梅方向",
+		"Limit": "40",
+		"Latitude": "24.905577",
+		"Longitude": "121.177747"
+	}
+]
